@@ -5,4 +5,8 @@ module.exports = {
       data,
     };
   },
+
+  error(message) {
+    return { error: message };
+  },
 };

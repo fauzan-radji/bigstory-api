@@ -1,7 +1,8 @@
 const router = require("express").Router();
-const { create, read } = require("./handler/stories");
+const stories = require("./handler/stories");
 
-router.get("/stories", read);
-router.post("/stories", create);
+router.get("/stories", stories.index);
+router.get("/stories/:id", stories.show);
+router.post("/stories", stories.create);
 
 module.exports = router;

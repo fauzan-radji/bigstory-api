@@ -72,8 +72,16 @@ https://bigstory-api.vercel.app/v1/
 
   ```json
   {
-    "message": "story fetched successfully",
-    "data": {}
+    "message": "Story fetched successfully",
+    "data": {
+      "id": 1,
+      "title": "The Big Story",
+      "writer": "John Doe",
+      "synopsis": "A story about a big story",
+      "category": "Technology",
+      "status": 1,
+      "cover": "https://bigstory-api.vercel.app/v1/images/cover.jpg"
+    }
   }
   ```
 
