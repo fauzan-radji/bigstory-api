@@ -6,10 +6,38 @@ This is a simple API that allows you to create, read, update and delete stories.
 
 ## Requirements
 
-For development purposes (`npm run dev`), I use [nodemon](https://nodemon.io/) installed globally. If you don't have [nodemon](https://nodemon.io) installed you'll get an error. You could install it using the following command:
+For deployment purposes I use `vercel-cli`, so you need to have it installed on your machine.
 
-```sh
-npm i -g nodemon
+```bash
+npm install -g vercel
 ```
 
-If you don't want to install it you could use `npm start` or `node index.js` instead of `npm run dev`.
+After that, you need to login to your Vercel account:
+
+```bash
+vercel login
+```
+
+For more information about the `vercel-cli`, you can check the [official documentation](https://vercel.com/docs/cli).
+
+## Development
+
+To run the project locally, you need to have `vercel-cli` installed on your machine.
+
+```bash
+npm install -g vercel
+```
+
+Then you can run the following command to start the development server:
+
+```bash
+vercel dev
+```
+
+## Deployment
+
+To deploy the project, you need to run the following command:
+
+```bash
+vercel
+```
