@@ -41,7 +41,21 @@ https://bigstory-api.vercel.app/v1/
         "synopsis": "A story about a big story",
         "category": "Technology",
         "status": 1,
-        "cover": "https://bigstory-api.vercel.app/v1/images/cover.jpg"
+        "cover": "https://bigstory-api.vercel.app/v1/images/cover.jpg",
+        "keywords": [
+          { "id": 1, "text": "school" },
+          { "id": 2, "text": "fiction" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Another Big Story",
+        "writer": "John Doe",
+        "synopsis": "The Big Stories continues",
+        "category": "Technology",
+        "status": 0,
+        "cover": "https://bigstory-api.vercel.app/v1/images/cover.jpg",
+        "keywords": []
       }
     ]
   }
@@ -80,7 +94,11 @@ https://bigstory-api.vercel.app/v1/
       "synopsis": "A story about a big story",
       "category": "Technology",
       "status": 1,
-      "cover": "https://bigstory-api.vercel.app/v1/images/cover.jpg"
+      "cover": "https://bigstory-api.vercel.app/v1/images/cover.jpg",
+      "keywords": [
+        { "id": 1, "text": "school" },
+        { "id": 2, "text": "fiction" }
+      ]
     }
   }
   ```
@@ -107,10 +125,10 @@ https://bigstory-api.vercel.app/v1/
   POST /stories
   ```
 
-  ##### Header
+  <!-- ##### Header
 
   **Authorization:** `Bearer <token>`\
-  **Content-Type:** `application/json`
+  **Content-Type:** `application/json` -->
 
   |    Name    |    Type    | Description                                                     |      Required      | Default |
   | :--------: | :--------: | --------------------------------------------------------------- | :----------------: | :-----: |
@@ -127,12 +145,12 @@ https://bigstory-api.vercel.app/v1/
   {
     "message": "Story fetched successfully",
     "data": {
-      "id": 1,
-      "title": "The Big Story",
+      "id": 2,
+      "title": "Another Big Story",
       "writer": "John Doe",
-      "synopsis": "A story about a big story",
+      "synopsis": "The Big Stories continues",
       "category": "Technology",
-      "status": 1,
+      "status": 0,
       "cover": "https://bigstory-api.vercel.app/v1/images/cover.jpg"
     }
   }
